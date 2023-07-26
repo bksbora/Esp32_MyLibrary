@@ -1,0 +1,30 @@
+#include <Arduino.h>
+int touchValue;
+const int threshold = 20;
+void setup()
+{
+  Serial.begin(115200);
+  delay(1000); // give me time to bring up serial monitor
+  Serial.println("ESP32 Touch Test");
+  pinMode(LED_BUILTIN, OUTPUT);
+}
+
+void loop()
+{
+
+  Serial.println(touchRead(4)); // get value of Touch 0 pin = GPIO 4
+  touchValue = touchRead(4);    // get value of Touch 0 pin = GPIO 4
+  if (touchValue < threshold)
+  {
+    // turn LED on
+    digitalWrite(LED_BUILTIN, HIGH);
+    Serial.println(" - LED on");
+  }
+  else
+  {
+    // turn LED off
+    digitalWrite(LED_BUILTIN, LOW);
+    Serial.println(" - LED off");
+  }
+  delay(500);
+}

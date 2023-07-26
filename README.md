@@ -1,6 +1,7 @@
 # Esp32_MyLibrary
 
-![ESP32](https://example.com/path/to/esp32_image.jpg)
+<img src="https://upload.wikimedia.org/wikipedia/commons/thumb/8/8e/Espressif_Logo.svg/1200px-Espressif_Logo.svg.png?20220810185444"  align="middle">
+
 
 Welcome to the **Esp32_MyLibrary** repository! Here, you'll find my collection of notes and resources related to my learning journey with the ESP32 microcontroller. My goal is to create a comprehensive and useful ESP32 Library that will serve as a valuable resource for anyone interested in working with this powerful device.
 

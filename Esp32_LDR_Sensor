@@ -1,0 +1,30 @@
+//[env:esp32doit-devkit-v1]
+//platform = espressif32
+//board = esp32doit-devkit-v1
+//framework = arduino
+//monitor_speed = 115200
+
+#include <Arduino.h>
+
+#define LDRPIN 2
+void setup()
+{
+  Serial.begin(115200);
+  delay(1000);
+}
+
+void loop()
+{
+  int val = analogRead(LDRPIN);
+  if (val > 800)
+  {
+    Serial.println("Karanlik");
+    Serial.println(val);
+  }
+  else
+  {
+    Serial.println("Aydinlik");
+    Serial.println(val);
+  }
+  delay(2000);
+}
